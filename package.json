@@ -10,6 +10,6 @@
     "api": "cd api && npm start",
     "gateway": "cd gateway && npm start"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Stylix58",
+  "license": "MIT"
 }
