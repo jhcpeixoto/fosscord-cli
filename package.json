@@ -1,0 +1,15 @@
+{
+  "name": "fosscord",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "bash init.sh",
+    "update": "bash update.sh",
+    "start": "node index.js",
+    "api": "cd api && npm start",
+    "gateway": "cd gateway && npm start"
+  },
+  "author": "",
+  "license": "ISC"
+}
