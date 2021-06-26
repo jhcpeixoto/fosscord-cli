@@ -31,5 +31,13 @@
     "multer": "^1.4.2",
     "node-fetch": "^2.6.1",
     "ws": "^7.5.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stylix58/fosscord-autoinstall.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Stylix58/fosscord-autoinstall/issues"
+  },
+  "homepage": "https://github.com/Stylix58/fosscord-autoinstall#readme"
 }
