@@ -8,7 +8,8 @@
     "update": "bash update.sh",
     "start": "node index.js",
     "api": "cd api && npm start",
-    "gateway": "cd gateway && npm start"
+    "gateway": "cd gateway && npm start",
+    "cdn": "cd cdn && npm start"
   },
   "author": "Stylix58",
   "license": "MIT",
