@@ -14,7 +14,7 @@ function init() {
     console.log("Installing dependancies...");
     exec("cd api && npm i && cd ../gateway && npm i");
 }
-program.command("init").description("Initialize the instance").action(init);
+program.command("init").description("initialize the instance").action(init);
 
 function start() {
     pm2.connect(function (err) {
@@ -50,7 +50,7 @@ function start() {
         );
     });
 }
-program.command("start").description("Start the instance").action(start);
+program.command("start").description("start the instance").action(start);
 
 function stop() {
     console.log("Stopping API...");
@@ -63,12 +63,12 @@ function stop() {
         if (err) throw err;
     });
 }
-program.command("stop").description("Stop the instance").action(stop);
+program.command("stop").description("stop the instance").action(stop);
 
 function update() {
     console.log("Updating the instance...")
     exec("cd api && git pull && npm i && cd ../gateway && git pull && npm i");
 }
-program.command("update").description("Update the instance").action(update);
+program.command("update").description("update the instance").action(update);
 
 program.parse();
