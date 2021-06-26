@@ -1,6 +1,8 @@
-# Fosscord auto-installation for selfhosting an instance
+# Fosscord auto-installation
+An script for install the stack for an Fosscord instance.
 
 ## Setup
+**NOTE**: You should complete the installation with the adding of the database (see https://docs.fosscord.com/contributing.html#mongodb for instructions).
 
 ### Init
 `npm run init`
