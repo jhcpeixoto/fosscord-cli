@@ -1,7 +1,7 @@
 {
-  "name": "fosscord",
+  "name": "fosscord-autoinstall",
   "version": "1.0.0",
-  "description": "",
+  "description": "An script for install the stack for an Fosscord instance.",
   "main": "index.js",
   "scripts": {
     "init": "bash init.sh",
@@ -11,7 +11,7 @@
     "gateway": "cd gateway && npm start",
     "cdn": "cd cdn && npm start"
   },
-  "author": "Stylix58",
+  "author": "stylix58",
   "license": "MIT",
   "dependencies": {
     "@fosscord/server-util": "^1.3.18",
