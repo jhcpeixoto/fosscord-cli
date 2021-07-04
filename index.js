@@ -27,7 +27,7 @@ function start() {
         pm2.start(
             {
                 name: "fosscord-api",
-                script: "cd api && npm run build && node dist/start",
+                script: "cd api && npm run start",
                 exec_mode: "cluster",
             },
             function (err, apps) {
@@ -40,7 +40,7 @@ function start() {
         pm2.start(
             {
                 name: "fosscord-gateway",
-                script: "cd gateway && npm run build && node dist/start.js",
+                script: "cd gateway && npm run start",
                 exec_mode: "cluster",
             },
             function (err, apps) {
