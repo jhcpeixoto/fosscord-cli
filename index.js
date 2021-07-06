@@ -13,6 +13,9 @@ function init() {
     );
     console.log("Installing dependancies...");
     exec("cd api && npm i && cd ../gateway && npm i");
+    console.log(
+        "NOTE: You should complete the installation with the adding of the database (see https://docs.fosscord.com/contributing.html#mongodb for instructions)."
+    );
 }
 program.command("init").description("initialize the instance").action(init);
 
@@ -58,7 +61,7 @@ function stop() {
         if (err) throw err;
     });
 
-    console.log("Stopping gateway...")
+    console.log("Stopping gateway...");
     pm2.stop("fosscord-gateway", (err, proc) => {
         if (err) throw err;
     });
@@ -66,7 +69,7 @@ function stop() {
 program.command("stop").description("stop the instance").action(stop);
 
 function update() {
-    console.log("Updating the instance...")
+    console.log("Updating the instance...");
     exec("cd api && git pull && npm i && cd ../gateway && git pull && npm i");
 }
 program.command("update").description("update the instance").action(update);
