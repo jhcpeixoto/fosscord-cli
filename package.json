@@ -1,12 +1,16 @@
 {
   "name": "fosscord-cli",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "An CLI for manage your Fosscord instance with ease.",
   "main": "index.js",
   "bin": {
     "fosscord": "index.js"
   },
   "author": "stylix58",
+  "contributors": [
+    "FuflyPaladium",
+    "jhcpeixoto"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
